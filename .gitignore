@@ -1,0 +1,5 @@
+venv/
+drivers/
+__pycache__
+chromedriver
+.DS_Store
