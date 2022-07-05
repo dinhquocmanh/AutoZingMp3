@@ -9,18 +9,20 @@ if __name__ == "__main__":
     wdf = WebDriverFactory(configs=configs)
     driver = wdf.getWebDriverInstance()
 
-    # # Send a get request to the url
-    # driver.get('https://zingmp3.vn/')
+    # Send a get request to the url
+    driver.get('https://zingmp3.vn/')
 
-    # # auto home page 
-    # homepage = HomePage(driver=driver)
-    # # login by cookies
-    # homepage.load_cookie()
-    # driver.get('https://zingmp3.vn/')
-    # # search for song name
-    # homepage.search_for_song('Cạn cả nước mắt')
+    # home page auto
+    homepage = HomePage(driver=driver)
 
-    driver.get('https://mp3.zing.vn/bai-hat/Cho-Toi-Lang-Thang-Ngot-Den/ZW79DF7C.html')
+    # export cookies, you have 60 second to login then cookies auto exported
+    #time.sleep(60)
+    #homepage.export_cookie()
+    
+    # load cookies to login 
+    homepage.load_cookie()
+    driver.get('https://zingmp3.vn/')
+    
 
     while True:
         try:
