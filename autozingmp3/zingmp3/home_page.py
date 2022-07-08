@@ -1,7 +1,9 @@
+import time
 from autozingmp3.browser.base_page import BasePage
 import os 
 import json
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
 
 class HomePage(BasePage):
     def __init__(self, driver):
@@ -62,3 +64,19 @@ class HomePage(BasePage):
         https://zingmp3.vn/tim-kiem/bai-hat?q=L%E1%BB%91i%20nh%E1%BB%8F
         """
         pass 
+
+    def play_song():
+        """
+        Play the first song in search results
+        """
+
+    def get_top_100_rap(self):
+        """
+        """
+        top100_elements = self.getElementList("//div[@class='select-item']")
+        for element in top100_elements:
+            print("==========")
+            print(element.text)
+        # play the second song
+        song_thumb = top100_elements[1].find_element(By.XPATH, ".//div[@class='song-thumb']")
+        song_thumb.click()
