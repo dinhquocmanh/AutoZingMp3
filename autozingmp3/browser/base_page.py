@@ -1,3 +1,12 @@
+"""
+class BasePage: 
+    chứa các functions thường dùng của webdriver selenium
+    các functions được viết lại dễ sử dụng hơn và đúng theo
+    nhu cầu của mình.
+    Các class auto khác sẽ kế thừa lại BasePage và sử dụng lại
+    các function có sẵn của nó.
+"""
+
 from selenium.webdriver.common.by import By
 from traceback import print_stack
 from selenium.webdriver.support.ui import WebDriverWait

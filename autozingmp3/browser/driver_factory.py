@@ -1,3 +1,15 @@
+"""
+class WebDriverFactory:
+    khởi tạo driver object từ các thông số config
+    usage:
+        wdf = WebDriverFactory(configs=configs)
+        driver = wdf.getWebDriverInstance()
+
+class WebDriverConfigs:
+    chứa các config để truyền vào class trên
+    vd: proxy, extensions, profile, window size,...
+"""
+
 from selenium import webdriver
 from autozingmp3.log.custom_logger import CustomLogger
 

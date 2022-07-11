@@ -1,0 +1,27 @@
+{
+    "zingmp3.vn": {
+        "site_name": "zingmp3.vn",
+        "home_page": "https://zingmp3.vn/",
+        "bxh_url":  "https://zingmp3.vn/album/Top-100-Nhac-Rap-Viet-Nam-Hay-Nhat-Lil-Wuyn-Binz-Rhymastic-Phao/ZWZB96AI.html",
+        "cookie_file": "default_cookie.json",
+        "common": {
+            "search_bar_xpath": "//input[contains(@placeholder,'Tìm kiếm bài hát')]",
+            "logout_xpath": false,
+            "play_song_in_search_result": false,
+            "play_song_in_bxh": false
+        },
+        "player" : {
+            "is_showing_xpath": "//div[@class='player-controls clickable']",
+            "next_xpath" : "//button[contains(@class,'zm-tooltip-btn btn-next')]",
+            "previous_xpath" : "//button[contains(@class,'zm-tooltip-btn btn-pre')]",
+            "play_xpath" : "//button[contains(@class,'zm-tooltip-btn btn-play')]",
+            "pause_xpath" : "//button[contains(@class,'zm-tooltip-btn btn-play')]",
+            "shuffle_xpath": "//button[contains(@class,'zm-tooltip-btn btn-shuffle')]",
+            "repeat_xpath": "//button[contains(@class,'zm-tooltip-btn btn-repeat')]",
+            "like_xpath": "//div[@class='player-controls clickable']//button[contains(@class,'animation-like')]"
+        }
+    },
+    "nhaccuatui.com": {
+
+    }
+}

@@ -1,3 +1,13 @@
+"""
+CustomLogger:
+    Hàm log cho cả chương trình in ra file auto.log 
+    và in ra console
+Usage:
+    log = CustomLogger()
+    log.infor('info~')
+    log.error('some thing wrong!')
+"""
+
 import inspect
 import logging
 
